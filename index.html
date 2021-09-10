@@ -1,11 +1,140 @@
 <!DOCTYPE html>
-<html lang="”en”">
+<html lang="en">
   <head>
-    <meta charset="”UTF-8″" />
-    <title>Prueba GIT</title>
+    <meta charset="UTF-8" />
+    <title>Yes I Can - Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styless/styles.css" />
   </head>
   <body>
-    <h1>Linea modificada por 2da vez</h1>
-    <h2>Nuevo titulo</h2>
+    <header>
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="/pages/vientos.html">VIENTOS</a></li>
+          <li><a href="/pages/cuerdas.html">CUERDAS</a></li>
+          <li><a href="/pages/consignaciones.html">CONSIGNACIONES</a></li>
+          <li><a href="/pages/contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="Cuerpo">
+      <div class="Logo">
+        <h1>Yes I Can - Instrumentos Fieles</h1>
+
+        <!--
+      A continuación el logo del emprendimiento
+      La idea es mejora mucho este primer diseño 
+      de la pagina HOME
+    -->
+
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/yesican_logo.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/carousel_002.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/carousel_003.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <h2>Sobre Nosotros</h2>
+      <!--
+      A continuación breve descripcion del servicio 
+      que se ofrece
+    -->
+      <p>
+        Nos dedicamos a la venta de instrumentos musicales. Principalmente de
+        vientos y de cuerdas. Tratamos de apoyar los trabajos de talleres de
+        lutheria tanto para la fabricación como para la restauración de
+        instrumentos. Consideramos que la musica es un gran don en esta vida y
+        una gran terapia para conectarnos con nosotros mismos.
+      </p>
+    </div>
+    <!--
+      A continuación el pie de la pagina, la idea es que haya
+      vínculos a redes sociales como facebook, instagram, Youtube
+    -->
+    <footer>
+      <div class="Copyright">
+        <p>Copyright &copy; 2021 Yes I Can.</p>
+        <p>Author: Adrian Ayala</p>
+        <p>
+          <a href="mailto:adrian.ayala1@gmail.com">adrian.ayala1@gmail.com</a>
+        </p>
+      </div>
+      <!-- prueba de redes sociales (inicio)-->
+
+      <div class="social">
+        <a href="https://www.facebook.com/yesicanmusik/"
+          ><img src="img/facebook_icon.png" alt="facebook"
+        /></a>
+        <a href="https://www.youtube.com/channel/UChBlQgk0S3744ppyYvAi8Fw"
+          ><img src="img/youtube_icon.png" alt="youtube"
+        /></a>
+        <a href="https://www.instagram.com/yesican_musik/"
+          ><img src="img/instagram_icon.png" alt="instagram"
+        /></a>
+      </div>
+      <!-- prueba de redes sociales (fin)-->
+    </footer>
   </body>
 </html>
