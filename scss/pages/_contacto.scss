@@ -1,0 +1,43 @@
+form {
+  width: 450px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin: auto;
+  background: $gris_formulario; /*fondo para el form de contacto*/
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+#h2Contacto {
+  color: $blanco;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+input,
+textarea,
+#Sexo {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box; /*para que el padding sea hacia adentro y simetrico*/
+  border: none;
+}
+
+#botonEnviar {
+  border-radius: 10px;
+  background-image: linear-gradient(to right, $amarillo, $blanco);
+}
+
+#botonReset {
+  border-radius: 10px;
+  background-image: linear-gradient(to right, $amarillo, $blanco);
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+  background-color: $amarillo;
+}

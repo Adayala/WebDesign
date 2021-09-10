@@ -1,0 +1,18 @@
+header {
+  grid-area: header;
+  background: $amarillo;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: $amarillo;
+  li {
+    padding: 1rem;
+    a {
+      text-decoration: none;
+    }
+  }
+}
