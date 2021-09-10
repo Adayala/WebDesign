@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/*Variables*/
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,400;1,500&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&family=Zen+Loop:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Cabin", sans-serif;
+}
+
+body {
+  /*background-image: url(fondo.jpg);*/
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/*Para que luego del cuerpo el footer vaya abajo de todo*/
+.Cuerpo {
+  min-height: calc(100% - 4rem);
+}
+
+.encabezado_pagina {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+}
+
+/*  GRILLAS - aplicado en la primera entrega solamente en la pagina de CONSIGNACIONES.HTML */
+#grilla {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: " header   " " Cuerpo  " " footer ";
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+}
+
+Cuerpo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: Cuerpo;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background: #ffee01;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #ffee01;
+}
+
+nav ul li {
+  padding: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+form {
+  width: 450px;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  /*fondo para el form de contacto*/
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+#h2Contacto {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+input,
+textarea,
+#Sexo {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*para que el padding sea hacia adentro y simetrico*/
+  border: none;
+}
+
+#botonEnviar {
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffee01), to(#fff));
+  background-image: linear-gradient(to right, #ffee01, #fff);
+}
+
+#botonReset {
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffee01), to(#fff));
+  background-image: linear-gradient(to right, #ffee01, #fff);
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+  background-color: #ffee01;
+}
+
+.Logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*estilos para el footer*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* manda el div del Copy de una lado y el div del social para el otro*/
+  list-style: none;
+  max-width: 100%;
+  height: 4rem;
+  /*min-height: 130px;*/
+  margin-top: 50px;
+  /*para separar el footer del contenido de arriba*/
+  margin-bottom: 0%;
+  /*para separar el footer del contenido de arriba*/
+  background: #ffee01;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+.social,
+.Copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  gap: 20px;
+  /*display: flex;
+  padding: 1rem;
+  gap: 20px;*/
+}
+
+/*.Copyright {
+  display: flex;
+  padding: 1rem;
+  gap: 20px;
+}*/
+/*estilos para tablas*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr:nth-child(even) {
+  /*background-color: #dddddd;*/
+  background: rgba(0, 0, 0, 0.4);
+  /*fondo para el form de contacto*/
+}
+
+td,
+th {
+  border: 1px solid #fff;
+  text-align: left;
+  padding: 8px;
+}
+
+.contenedor_tabla {
+  width: 90%;
+  margin: 50px auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  /*Corrección de Esteban*/
+}
+
+.titulo_columna {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  border: solid 2px black;
+}
+
+.item_tabla {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 10px;
+  border: solid 2px black;
+}
+
+.item_tabla:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
