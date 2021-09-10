@@ -1,0 +1,33 @@
+# dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# testing
+coverage/
+
+# development
+.babel-cache/
+
+# production
+dist/
+build/
+
+# static minified files
+public/static/*
+
+# misc
+.DS_Store
+.env
+.env.build
+.env.test
+.env.prod
+.env.local
+.env.test.local
+.env.prod.local
+
+*.log
+
+# IDEs
+.idea/
+.vscode/
